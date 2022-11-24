@@ -2,7 +2,7 @@ import React, { useState }  from 'react';
 import CommentBox from './CommentBox';
 import '../App.css';
 
-export default function Homepage({ }) {
+export default function Homepage() {
   const [comments, setComments] = useState(JSON.parse(localStorage.getItem('COMMENTS_DATA') || "[]"));
   
   function getComments() {
