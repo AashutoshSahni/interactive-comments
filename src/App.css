@@ -13,6 +13,10 @@
   }
 }
 
+body{
+  background-color: #e4eefd;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +38,242 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.home-page {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.new-comment-box-user-comment-information{
+  margin: 0px 20px;
+  padding: 20px 10px 20px 30px;
+  width: 50%;
+  border-radius: 8px;
+  background: rgb(183, 227, 255);
+}
+
+.new-comment-box-user-name {
+  display: flex;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid rgb(18, 21, 36);
+  border-radius: 6px;
+  padding: 5px 5px;
+  margin-top: 10px;
+  width: 80%;
+}
+
+
+.new-comment-box-user-comment {
+  display: flex;
+  margin-top: 20px;
+  font-size: 15px;
+  border: 1px solid rgb(18, 21, 36);
+  border-radius: 6px;
+  font-weight: 300;
+  width: 80%;
+}
+
+@media (min-width: 1080px) {
+  .new-comment-box-user-comment-information {
+    width: 30%;
+  }
+
+  .new-comment-box-user-name {
+    width: 90%;
+  }
+
+  .new-comment-box-user-comment {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .new-comment-box-user-comment-information {
+    width: 70%;
+  }
+
+  .new-comment-box-user-name {
+    width: 90%;
+  }
+
+  .new-comment-box-user-comment {
+    width: 90%;
+  }
+}
+
+.button-container{
+  margin-left: 65px;
+}
+.post-button {
+  margin-top: 20px;
+  float: left; 
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.post-button:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.comment-box-main-container {
+  margin: 10px 20px;
+  width: 100%;
+
+}
+.comment-box-user-profile-image {
+  position: relative;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+}
+.comment-box-user-profile-image img {
+  width: 30px;
+  height: 30px;
+}
+
+.comment-box-user-comment-infomation{
+  margin: 0px 20px;
+  border: 1px solid rgb(18, 21, 36);
+  overflow: scroll;
+  max-height: 50px;
+  margin-top: 20px;
+  background-color: rgb(247, 247, 247);
+  padding: 20px 10px 20px 30px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.comment-box-user-name {
+  display: flex;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.comment-box-user-comment {
+  display: flex;
+  text-align: justify;
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.comments-user-like-image img {
+  width: 25px;
+  height: 25px;
+}
+
+.comment-box-user-likes-section {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 8px;
+}
+
+.comment-user-likes-count {
+  margin-left: 16px;
+  font-size: 20px;
+  position: relative;
+  bottom: 20px;
+}
+
+.comment-box-user-comment-reply-container {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.comment-box-user-comment-reply-image img {
+  width: 25px;
+  height: 25px;
+}
+
+.comment-box-user-comment-reply-text {
+  font-size: 20px;
+  margin-left: 12px;
+  position: relative;
+  bottom: 20px;
+}
+
+.comment-box-user-likes-reply-section-container {
+  display: flex;
+}
+
+.delete-comment{
+  width: 25px;
+  height: 25px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.edit-comment{
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+@media (min-width: 1075px) {
+  .comment-specific {
+    width: 63%;
+  }
+  
+  .reply-specific {
+    width: 59%;
+  }
+}
+@media (max-width: 1075px) {
+  .comment-specific {
+    width: 75%;
+  }
+  
+  .reply-specific {
+    width: 60%;
+  }
+}
+
+.comment-box-user-comment-infomation-container {
+  margin-left: 20px;
+}
+
+.delete-container {
+  position: relative;
+  right: 10px;
+  top: 15px;
+}
+
+@media (min-width: 1075px) {
+  /* … */
+  .new-comment-container {
+    margin-left: 9%;
+  }
+  
+  .all-replies-container {
+    margin-left: 7%;
+  }
+}
+@media (max-width: 1075px) {
+  .new-comment-container {
+    margin-left: 7%;
+  }
+  
+  .all-replies-container {
+    margin-left: 5%;
   }
 }

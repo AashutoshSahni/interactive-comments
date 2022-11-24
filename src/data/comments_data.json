@@ -1,0 +1,12 @@
+[
+  {
+    "userName": "Aashutosh",
+    "content": "First Comment",
+    "replies": [
+      {
+        "userName": "Test bot",
+        "content": "Reply"
+      }
+    ] 
+  }
+]
