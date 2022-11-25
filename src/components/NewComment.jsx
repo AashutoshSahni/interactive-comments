@@ -16,6 +16,7 @@ export default function NewComment({display, setComments, parentId}) {
     allComments.push(comment);
     setComments(allComments);
     localStorage.setItem('COMMENTS_DATA', JSON.stringify(allComments));
+    setValues({ userName: '', imageUrl: '', content: ''});
   }
 
   function submitReply(parentId, values) {
@@ -34,6 +35,7 @@ export default function NewComment({display, setComments, parentId}) {
     allComments[index] = comment;
     setComments(allComments);
     localStorage.setItem('COMMENTS_DATA', JSON.stringify(allComments));
+    setValues({ userName: '', imageUrl: '', content: ''});
   }
 
   function handleChange(event){
