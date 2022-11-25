@@ -137,13 +137,14 @@ body{
 }
 .comment-box-user-profile-image {
   position: relative;
-  top: 20px;
+  top: 70px;
   width: 40px;
   height: 40px;
 }
 .comment-box-user-profile-image img {
   width: 30px;
   height: 30px;
+  border-radius: 50%;
 }
 
 .comment-box-user-comment-infomation{
@@ -266,6 +267,7 @@ body{
   
   .all-replies-container {
     margin-left: 7%;
+    margin-top: 50px;
   }
 }
 @media (max-width: 1075px) {

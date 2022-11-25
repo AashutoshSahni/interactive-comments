@@ -91,22 +91,24 @@ export default function Homepage() {
           setComments={setComments}
         />
       </div>
-      {(comments || []).map(comment => (
-        <CommentBox
-          comment={comment}
-          action='display'
-          display={true}
-          key={comment.id}
-          id={comment.id}
-          handleUpVotes={handleUpVotes}
-          handleReplyUpVotes={handleReplyUpVotes}
-          setComments={setComments}
-          deleteComment={deleteComment}
-          deleteReply={deleteReply}
-          updateCommentContent={updateCommentContent}
-          updateReplyContent={updateReplyContent}
-        />
-      ))}
+      <div style={{marginTop: '50px'}}>
+        {(comments || []).map(comment => (
+          <CommentBox
+            comment={comment}
+            action='display'
+            display={true}
+            key={comment.id}
+            id={comment.id}
+            handleUpVotes={handleUpVotes}
+            handleReplyUpVotes={handleReplyUpVotes}
+            setComments={setComments}
+            deleteComment={deleteComment}
+            deleteReply={deleteReply}
+            updateCommentContent={updateCommentContent}
+            updateReplyContent={updateReplyContent}
+          />
+        ))}
+      </div>
     </div>
   )
 }
